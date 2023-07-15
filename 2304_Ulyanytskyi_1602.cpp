@@ -31,7 +31,7 @@ int main()
         cout << "Enter the Ukrainian word with a capital letter: ";
         ukrainian_word = get_user_input();
 
-        if (ukrainian_word == "exit" || ukrainian_word == "âèõ³ä")
+        if (ukrainian_word == "exit" || ukrainian_word == "âèõ³ä" || ukrainian_word == "Âèõ³ä")
         {
             cout << "Exit";
             break;
