@@ -26,12 +26,20 @@ int main()
     dictionary["Сонце"] = "Sun";
     dictionary["Погода"] = "Weather";
 
+    cout << "This simple translator has these words to translate:\n";
+    for (auto& element : dictionary)
+    {
+        cout << element.first << ' ';
+    }
+
+    cout << "\nEnter Exit in ukrainian for exit.\n";
+
     while (true)
     {
         cout << "Enter the Ukrainian word with a capital letter: ";
         ukrainian_word = get_user_input();
 
-        if (ukrainian_word == "exit" || ukrainian_word == "вихід" || ukrainian_word == "Вихід")
+        if (ukrainian_word == "Вихід" || ukrainian_word == "вихід")
         {
             cout << "Exit";
             break;
